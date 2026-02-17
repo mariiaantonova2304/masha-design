@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masha.Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">Masha.Design</div>
+  <div class="lang-switch">
+    <span id="ruBtn" class="active">RU</span> |
+    <span id="enBtn">EN</span>
+  </div>
+</header>
+
+<section class="hero">
+  <h1 data-ru="ПОРТФОЛИО" data-en="PORTFOLIO">ПОРТФОЛИО</h1>
+  <p data-ru="Привет, я Маша! Создаю минималистичный и современный дизайн сайтов, постеров и приложений."
+     data-en="Hi, I'm Masha! I create modern and minimalist designs for websites, posters and apps.">
+     Привет, я Маша! Создаю минималистичный и современный дизайн сайтов, постеров и приложений.
+  </p>
+</section>
+
+<section class="about">
+  <h2 data-ru="Характеристики как дизайнера" data-en="Designer Highlights">
+    Характеристики как дизайнера
+  </h2>
+  <ul>
+    <li data-ru="Минималистичный дизайн" data-en="Minimalist design">Минималистичный дизайн</li>
+    <li data-ru="Подбор палитры" data-en="Color palette selection">Подбор палитры</li>
+    <li data-ru="Работа с разными форматами" data-en="Multiple design formats">Работа с разными форматами</li>
+    <li data-ru="Создание сайтов" data-en="Website creation">Создание сайтов</li>
+  </ul>
+</section>
+
+<section class="works">
+  <h2 data-ru="Работы" data-en="Projects">Работы</h2>
+
+  <div class="grid">
+    <div class="card" onclick="openModal('Crochetissimo')">Crochetissimo</div>
+    <div class="card" onclick="openModal('Blueberry')">Blueberry</div>
+    <div class="card" onclick="openModal('Gemini Grow')">Gemini Grow</div>
+    <div class="card" onclick="openModal('Fox Poster')">Fox Poster</div>
+    <div class="card" onclick="openModal('Magic Book')">Magic Book</div>
+  </div>
+</section>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <p data-ru="Описание проекта будет здесь."
+       data-en="Project description will be here."
+       id="modalDesc">
+       Описание проекта будет здесь.
+    </p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Masha.Design</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
